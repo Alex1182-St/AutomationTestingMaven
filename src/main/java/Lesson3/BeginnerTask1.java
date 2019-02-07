@@ -17,4 +17,6 @@ public class BeginnerTask1 {
         for (int i = 0; i < ResultMult.length; i++) {
             System.out.println(ResultMult[i]);
 
+
+
         }}}
