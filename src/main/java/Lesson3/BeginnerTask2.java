@@ -1,14 +1,14 @@
 package Lesson3;
 
 /*
-Given two integers, x and y. Create a method (program) which returns True if one if them is 10
+2. Given two integers, x and y. Create a method (program) which returns True if one if them is 10
 or if their sum is 10
  */
 
 public class BeginnerTask2 {
 
-    public int x;
-    public int y;
+    private int x;
+    private int y;
 
     public int getX() {
         return x;
@@ -22,34 +22,38 @@ public class BeginnerTask2 {
     public void setY(int y) {
         this.y = y;
     }
-    public BeginnerTask2(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public BeginnerTask2( ) {
+
     }
 
-
     public static void main(String[] args)
-            /*
-            ругается, что getX и getY cannot be referenced from a static context
-            может так писать - if (getX(Task2.x) = 10) ????????????
-             */
     {
-        BeginnerTask2 Task2 = new BeginnerTask2(100,0);
+        System.out.println("2. Given two integers, x and y.\n" +
+                "Create a method (program) which returns True if one if them is 10 or if their sum is 10");
 
-        if (getX() = 10) {
-            System.out.println("True");
+
+        BeginnerTask2 Task2 = new BeginnerTask2();
+
+        Task2.setX(3);
+        Task2.setY(7);
+
+        int Task2X = Task2.getX();
+        int Task2Y = Task2.getY();
+        int ComparedValue = 10;
+
+        if (Task2X == ComparedValue) {
+            System.out.println("True  " + "X is 10");
         }
-        else if (getY() = 10 ) {
-            System.out.println("True");
+        else if (Task2Y == ComparedValue) {
+            System.out.println("True  " + "Y is 10");
         }
-        else if (getX() + getY() = 10) {
-            System.out.println("True");
+        else if (Task2X + Task2Y == 10) {
+            System.out.println("True  " + "Their sum is 10");
         }
         else {
             System.out.println("False");
         }
     }
 }
-
 
 
