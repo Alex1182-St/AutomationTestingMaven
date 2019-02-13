@@ -8,14 +8,15 @@ public class BeginnerTask6 {
 
         int [] numbers = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
 
+        //первый способ решения
         for (int i : numbers) {
             if (i%2==0)   //Understanding The Modulus Operator % - https://stackoverflow.com/questions/17524673/understanding-the-modulus-operator
                 System.out.println("Even " + i);
         }
 
-        for (int i = 0; i <= 30; i = i + 2) { //второй способ решения
-            System.out.println(i);
-        }
+        System.out.println("\nвторой способ решения\n");
+        //второй способ решения
+        for (int i = 0; i <= 30; i = i + 2) {
+            System.out.println("Even"+i);
+        } }}
 
-
-}}

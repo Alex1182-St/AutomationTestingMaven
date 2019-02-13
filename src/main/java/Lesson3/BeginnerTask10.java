@@ -6,6 +6,19 @@ import java.util.Scanner;
 public class BeginnerTask10 {
 
     public static void main(String[] args) {
+
+        System.out.println("10. Create method which gets a number form 1 to 9 (for example 4) and then prints the follow\n" +
+                "output:\n" +
+                "\n" +
+                "For number 4: For number 3:\n" +
+                "* *\n" +
+                "** **\n" +
+                "*** ***\n" +
+                "**** **\n" +
+                "*** *\n" +
+                "**\n" +
+                "*");
+
         ArrayList<String> stars = new ArrayList<String>();
         stars.add(" ");
         stars.add("*");
@@ -29,10 +42,11 @@ public class BeginnerTask10 {
         String j = stars.get(9);
 
 
-        System.out.println("\n Select a number from 1 to 9");
+        System.out.println("\n Select a number(variant) from 1 to 9");
         Scanner scan1 = new Scanner(System.in);
         int number = scan1.nextInt();
-        System.out.println("\n Your number is - " + number);
+        System.out.println("\n Your variant is - " + number);
+        scan1.close();
 
 
         switch(number) {
