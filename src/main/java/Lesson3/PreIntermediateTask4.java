@@ -22,6 +22,8 @@ public class PreIntermediateTask4 {
             intArray.add(5);
 
 
-            Arrays.copyOfRange(intArray,3,7);
+          /*  Arrays.copyOfRange(intArray,3,7);
+            конвертировать ArrayList в обычный Array а потом использовать copyOfRange
+            */
         }}
 
