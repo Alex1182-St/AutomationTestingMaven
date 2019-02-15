@@ -3,6 +3,7 @@ package Lesson3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class PreIntermediateTask4 {
 
@@ -21,9 +22,24 @@ public class PreIntermediateTask4 {
             intArray.add(7);
             intArray.add(5);
 
+            Object [] Array = intArray.toArray(); //ArrayList to Array(array of object type)
 
-          /*  Arrays.copyOfRange(intArray,3,7);
-            конвертировать ArrayList в обычный Array а потом использовать copyOfRange
-            */
+            System.out.println("\nArray length is " + Array.length);
+
+            Scanner newScanner = new Scanner(System.in);
+            System.out.println("Enter the start of diapason");
+            int start = newScanner.nextInt();
+            System.out.println("Enter the end of diapason");
+            int end = newScanner.nextInt();
+
+            Object [] diapasonArray = Arrays.copyOfRange(Array, start, end);
+
+            System.out.println("\nYour diapason is ");
+
+            for (int i = 0; i < diapasonArray.length; i++) {
+                System.out.println(diapasonArray[i]);}
+
+            newScanner.close();
+
         }}
 
