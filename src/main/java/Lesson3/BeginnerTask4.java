@@ -18,13 +18,13 @@ public class BeginnerTask4 {
 }
 
 class Calculation{
-    public int MethodIntCalc(int[] numbers, int numberToFind){
-        int countOfNumberToFind = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            if(numbers[i]==numberToFind){
-                countOfNumberToFind++;
+    public int MethodIntCalc(int[] array, int number){
+        int countOfNumber = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]==number){
+                countOfNumber++;
             }
         }
-        return countOfNumberToFind;
+        return countOfNumber;
     }
 }
