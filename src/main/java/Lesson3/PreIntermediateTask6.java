@@ -10,8 +10,8 @@ public class PreIntermediateTask6 {
 
         int[] myArray = {1,4,10,10,25,5,20};
 
-        System.out.println("Sum of array elements is " + Calc.sumCalculation(myArray));
-        System.out.println("Average of array elements is " + Calc.averageCalculation(myArray));
+        System.out.println("Sum of array elements is " + Calc2.sumCalculation(myArray));
+        System.out.println("Average of array elements is " + Calc2.averageCalculation(myArray));
 
 }}
 
