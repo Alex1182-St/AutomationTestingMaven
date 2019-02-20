@@ -1,5 +1,7 @@
 package Lesson3;
 
+import java.util.ArrayList;
+
 public class BeginnerTask1 {
 
     public static void main(String[] args) {
@@ -7,19 +9,25 @@ public class BeginnerTask1 {
         System.out.println("1. Given an array of integer numbers.\n" +
                 "Create a method (program) which returns a new one where each element is multiplied by 3\n");
 
-        int[] Array = {1, 25, 100, 400,0};
-        int[] ResultMult = new int[5];
+        ArrayList<Integer> ints = new ArrayList<Integer>();
+        ints.add(-1);
+        ints.add(5);
+        ints.add(10);
+        ints.add(7);
 
-        for(int i=0 ; i<Array.length ; i++) {
-            ResultMult[i] = Array[i]*3;
-            System.out.println(ResultMult[i]);
-        }
+        Multiplication multik = new Multiplication();
 
+        System.out.println(multik.arrayMult(ints,3));
     }}
 
-        /* Таким образом не работает ???????? -
-            for (int i : Array) {
-                ResultMult[i] = Array[i]*3;}
-            for (int i : ResultMult) {
-                System.out.println(ResultMult[i]);}
-         */
+class Multiplication {
+
+    public  ArrayList<Integer> arrayMult (ArrayList<Integer> arr, int multInt)
+
+    {
+        for (int i = 0; i < arr.size(); i++){
+            arr.set(i, arr.get(i)*multInt);
+        }
+        return arr;
+    }
+}
